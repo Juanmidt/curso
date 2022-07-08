@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<link rel="stylesheet" type="text/css" href="./gymlogin.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <meta charset="utf-8">
+<head>
+	<title>Pagina signup</title>
+	<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH0AAAB9CAMAAAC4XpwXAAAA+VBMVEX///86OjwAAAAmJigfHyEWFhgxMTOqFB+UDhmiEhy+FyE1NTfKGSO2FiAtLS8bGxvYGiTSGiTDGCGxFSCKCxaysrJ6BBDJycnnd3jXCBjhd3iUlJUGBgv79vbdubp3AADu7u6ZAACKAACAAAC/v7/a2tpEREVcXF2np6fLBRgODg736+uyAAChHSWXHiGSAABuAACHh4d7e3xsbG3ywcLgTlPWAAnWP0Xlmpvw0tJTU1LFAADtyMjUamzpq63GREiyABG8UFXXoaPHf4K5MDWgAA+5aGqvMzalAADCjY+jTE+SJCmrQES0f4GoY2bdx8iMPT+WUFLCnZ5kstjjAAAEiElEQVRoge2aW3faOBCAhW/YXJxy3wQMBsLNpkugLQkhaUmzpEk2SZv+/x+zkka2wfSyD7J8do++h77EzaeRR6MZnyAkkUgkEolEIpFIJP9P3HHtX3DaGLiJ6OfKLi2Krmo6QWOoqm0MR4vTBFbQVI4woYdg5DO2bRuEPCFDyBuasWgI0GO1eqjHGPrlgLd+fBg9LCG0h/pMvrVIQK9p2g/0dAV79kzGHrm89RqJk2x4RLAasjDVziepr+lGXB/aCTj/1XAB9jvOdlRTqN34uR4vIPCrY976BtXnf2XXPZXpFYe3/tTDv94jxUY5wNOJXlO9I3bymrztqPHTQtsc5fECNBUvj+nz3IP/Fe5Y1dUjsjmw+dopb8P7PwJOGP6uf9iir96jqWfMeds/LI+BCbA83/uxY3tR5uVHnOX+m4ACsLzYf6CmULtOt37o8rW/XzJ5idknq/0HHAWOHd16lbP95Hg/9MJ5PK8v4c0bxK5zvuuWpVLpTQnbyxgS+kn8iQXY7QTsq3UJKJQphfXVgV1JLPaLY2bP5UBf9uOPMHs+AfuHSWinTK4PHsl4tNwnkHX+ulAoFbC8zOzrj/FHXIVeNhrtNfieuI9rSPQg9Nz0YONp/6frNml1OFeb6wk7Z8VikcjLn+JPDBS4aWmfx7fS+sEhzxWL1L+JFTrUsHV60dvUrnO9Za7WUeiU6V6hc9wFfuFErkKXyTfpTia0whTKFQKxI7cZMF9cKi3oclRosm2ubbVzzkpMsQJsrnGrBTeq54Uz1ZHKJgyF62lfrZk9y+zTNprrBy2ezSYMlW9Te7GGApfLZsFf9NFwp7dXgzGD6m3D5Wr/BDWmXMlSKpUbNND2Zovd+crmO0v6G1Zisoz7z7iX2J2uducrnXM3356CvMjk1naFRi043/HpTlVqfOXohsWetSyLyK0nhGjGH+pbBvcRmoWesyhv325v2XmLRa8pdpN7I381hfJaZHKru0JzaOIiva639OHY5e1G6HYD1ZW58T8+yux9zcGDzPDdmPueU/4CecUkcmzf3uFLZY/BILHJaTWllZ3aaezddlKqH/AwhfJmmaZJ33z3oLFIkBt2tZiAtb0RKPc3IM8yu9l9EGhv38PNEsjN3ur3/4kbd1u4WaqBfYYcigi5/4XV9tBu/kkwhezA1T3YzWqkJ9sv5tTd3rPQKeHuC8q8L2Ho1WgBszsx8lWX3KpWcNzA33sU9Enqcxeu1d0d6P8tqtg9ba0dYO97XwXJnRncqQALXdgl0+7uyCH0/rMoObqzDuQvwuTOrEvYRvvefxX3BdZpU16ovl6vC0z3iEdir2J7vS8q3SOcHmlqiPzsu3A5as9IlSNyceke8ULsWN4Rl+4RjsXk38RnHL7he7Dv9WSmhd/wPKOhn4lPd4zzREM/EzlCRAx6JPROGumOeehVq/XOazpy9NivppTuGB9HXu+IHCB2+Y5DTyfdCa/9VKo7gDc+lQILtPudb6nJ0XOnnlK6EzqppTvma3rpjnkW+Z0ijpNeuhO70D9gkEgkEolEIpH8F/kH5biNjf1aug0AAAAASUVORK5CYII=" width="50" height="50" class="d-inline-block align-top" alt="">
+    Progressive overload tracker
+  </a>
+</nav>
+</head>
+
+<body>
+ <div class="container">
+  <div class="d-flex justify-content-center h-100">
+    <div class="card">
+      <div class="card-header">
+        <h3>Sign Up</h3>
+        <div class="d-flex justify-content-end social_icon">
+          <span><i class="fab fa-twitter-square"></i></span>
+      </div>
+      <div class="card-body">
+        <form>
+          <div class="input-group form-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-user"></i></span>
+            </div>
+            <input type="text" class="form-control" placeholder="Email/Usuario">
+            <div class="input-group form-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-user"></i></span>
+            </div>
+
+            <input type="text" class="form-control" placeholder="Contraseña">
+            <div class="input-group form-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-user"></i></span>
+            </div>
+
+            <input type="text" class="form-control" placeholder="Repite contraseña">
+          </div>
+          
+          <div class="input-group form-group">
+          <div class="row align-items-center remember">
+            <input type="checkbox">Recuerdame
+          </div>
+          <div align="float-right">
+            <input type="submit" value="Done" class="btn float-right login_btn" color= "white">
+          </div>
+        </form>
+      </div>
+      <div class="card-footer">
+        <div>
+          Tienes una cuenta? <a href="#"> Sign in</a>
+        </div>
+         <div class="d-flex justify-content-center">
+          <a href="#">Ayuda? contactanos?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+
+</html>
